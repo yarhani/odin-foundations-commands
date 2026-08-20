@@ -1,0 +1,72 @@
+/* Comment */
+/* Syntax
+Rule:
+    selector {
+        property: value;
+    }
+Declaration:
+    property:value;
+*/
+
+
+/* Universal Selector */
+* {
+    color:none;
+    /* text color */
+}
+
+/* Type Selector */
+div {
+    color:red;
+}
+
+/* Class Selector */
+.class-name {
+    color:rgb(0, 128, 0);
+    background-color:lightgray;
+    font-size:22px;
+    font-weight:700;
+    /* 700 = bold */
+}
+/* Do not start class name with number */
+/* May be used with multiple elements per page */
+
+/* ID Selector */
+#id-name {
+    color:#0000ff;
+}
+/* Do not start ID name with number */
+/* May be used only once in a page */
+/* Each element may have at most one ID */ 
+
+/* Selectors may be grouped (selector 1 OR 2) */
+.class-name,
+#id-name {
+    font-family: Arial, Helvetica, sans-serif;
+    /* Browser tries to display first value, falls back to subsequent values if it cannot find first one */
+}
+
+/* Selectors may be chained (selector 1 AND 2) */
+.class-name.class-2 {
+    text-align: right;
+}
+/* i.e. concatenate selectors without spaces */
+
+/* Descendant combinator */
+.ancestor .contents {
+    color: gold;
+}
+/* Selects an element with class 'contents' iff it has an ancestor with class 'ancestor' */
+.ancestor .contents .subcontents {
+    color: rgb(165, 42, 42);
+    background-color: rgba(165, 42, 42, 0.314);
+    /* alpha value captures transparency */
+
+}
+/* Selects an element with class 'subcontents' iff it has an acnestor with class 'contents' iff that ancestor has an ancestor with class 'ancestor' */
+
+img {
+    height: auto;
+    width: 200px;
+}
+/* Overrides width attribute. Best to include both HTML attribute and CSS declaration */

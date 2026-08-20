@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Title</title>
 </head>
 <body>
     <!-- Comment -->
+    <!-- Syntax:
+    Element:
+        <openingtag name="value">content</closing tag>
+        <voidelement>
+    Attribute:
+        name="value"  
+    -->
     <p>Paragraph</p>
     <br> <!-- Line Break -->
     <h1>Heading 1</h1>
@@ -16,6 +24,7 @@
     <h5>Heading 5</h5>
     <h6>Heading 6</h6>
     <strong>Bold</strong>
+    <br>
     <em>Italics</em>
     <ul>
         <li>Unordered list</li>
@@ -24,6 +33,24 @@
         <li>Ordered list</li>
     </ol>
     <a href="about.html" target="_blank" rel="noreferrer">Link</a>
+        <!-- noreferrer/noopener prevents tabnabbing -->
+    <br>
     <img src="odin.png" alt="Alt text" width="100">
+    <div>Div, type selector demo</div>
+    <div class="class-name class-2">Class selector demo</div>
+    <br>
+    <div id="id-name" class="class-name class-3">ID selector demo</div>
+    <div class="contents">Descendant combinator demo 1</div>
+    <div class="ancestor">
+        <div class="contents">
+            <p>Descendant combinator demo 2</p>
+            <div class="contents">Descendant combinator demo 3</div>
+            <div class="subcontents">Descendant combinator demo 4
+                <div class="subcontents">Descendant combinator demo 5</div>
+            </div>
+
+        </div>
+    </div>
+
 </body>
 </html>
