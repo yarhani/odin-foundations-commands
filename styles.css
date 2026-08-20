@@ -63,7 +63,7 @@ div {
     /* alpha value captures transparency */
 
 }
-/* Selects an element with class 'subcontents' iff it has an acnestor with class 'contents' iff that ancestor has an ancestor with class 'ancestor' */
+/* Selects an element with class 'subcontents' iff it has an ancestor with class 'contents' iff that ancestor has an ancestor with class 'ancestor' */
 
 img {
     height: auto;
